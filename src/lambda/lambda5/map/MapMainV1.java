@@ -1,4 +1,4 @@
-package lambda.lambda5;
+package lambda.lambda5.map;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package lambda.lambda5;
+package lambda.lambda5.map;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,11 +10,13 @@ public class MapMainV2 {
         List<String> list = List.of("1", "12", "123", "1234");
 
         // 문자열을 숫자로 변환
-        List<Integer> numbers = map(list, s -> Integer.valueOf(s));
+        Function<String, Integer> toNumber = s -> Integer.valueOf(s);
+        List<Integer> numbers = map(list, toNumber);
         System.out.println("numbers = " + numbers);
 
         // 문자열의 길이
-        List<Integer> lengths = map(list, s -> s.length());
+        Function<String, Integer> toLength = s -> s.length();
+        List<Integer> lengths = map(list, toLength);
         System.out.println("lengths = " + lengths);
     }
 

@@ -1,8 +1,6 @@
-package lambda.lambda5;
+package lambda.lambda5.filter;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.function.Predicate;
 
 public class FilterMainV4 {
 
