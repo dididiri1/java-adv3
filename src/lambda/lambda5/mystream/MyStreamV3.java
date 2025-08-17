@@ -44,10 +44,17 @@ public class MyStreamV3<T> {
         return internalList;
     }
 
-    //추가
+    // 추가
     public void forEach(Consumer<T> consumer) {
         for (T element : internalList) {
             consumer.accept(element);
         }
     }
+
+    // 추가
+    public T getFirst() {
+        return internalList.get(0);
+        // return internalList.getFirst(); Java 21부터 사용 가능
+    }
+
 }
