@@ -6,7 +6,7 @@ import java.util.Map;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
-public class DownStreamMain {
+public class DownStreamMain2 {
 
     public static void main(String[] args) {
         List<Student> students = List.of(
